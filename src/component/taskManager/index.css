@@ -1,0 +1,193 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.task-list-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e8f0f2;
+}
+
+/* Button Styles */
+.task-button {
+    background-color: #FF6F61; /* Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+
+.task-button:hover {
+    background-color: #e55b50; /* Darker Coral */
+}
+.task-list-container{
+    background-image: url('/src/component/taskManager/image.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height:200px; 
+    background-size: contain;
+    /* background-repeat: no-repeat;
+    width: 600px; */
+    /* color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center; */
+}
+
+/* Input Fields */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF; /* Focus color */
+}
+
+/* Activities and Notes Containers */
+.notes-container,
+.activities-input-container,
+.task-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Lists */
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+    position: relative;
+}
+
+/* Edit and Delete Icons */
+.fas {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #FF6F61; /* Coral */
+}
+
+.fas:hover {
+    color: #e55b50; /* Darker Coral */
+}
+
+/* Editable Container */
+.isEditable-container {
+    background-color: #a2c293;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px dashed #ccc;
+    position:absolute;
+    top: 50%;
+    left:20%;
+}
+
+/* Clear All Button */
+.clear-all,
+.clear-all-task {
+    margin: 20px 0;
+}
+
+.clear-all button,
+.clear-all-notes button,
+.clear-all-task button {
+    background-color: #DAA520; /* Goldenrod */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-all button:hover,
+.clear-all-task button:hover {
+    background-color: #c4931e; /* Darker Goldenrod */
+}
+.button {
+    background-color: #007BFF; /* Bootstrap Primary Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px; /* Space between buttons */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+.button:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+.back-button {
+    background-color: #FF6F61; /* Coral */
+}
+
+.back-button:hover {
+    background-color: #e55b50; /* Darker Coral */
+}
+
+.add-button {
+    background-color: #28a745; /* Bootstrap Success Green */
+}
+
+.add-button:hover {
+    background-color: #218838; /* Darker Green */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .task-list-container {
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .task-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .isEditable-container {
+        left:10%;
+    }
+
+}
+@media (max-width:500px){
+    .isEditable-container{
+        left: 2%;
+    }
+}
