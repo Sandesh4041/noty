@@ -39,11 +39,11 @@ header {
     background-color: #e55b50; /* Darker Coral */
 }
 .task-list-container{
-    background-image: url('/src/component/taskManager/image.jpg');
+    /* background-image: url('/src/component/taskManager/image.jpg');
     background-size: cover; 
     background-position: center; 
     height:200px; 
-    background-size: contain;
+    background-size: contain; */
     /* background-repeat: no-repeat;
     width: 600px; */
     /* color: white;
